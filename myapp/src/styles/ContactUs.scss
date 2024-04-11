@@ -1,0 +1,172 @@
+.contact {
+  width: 1112px;
+  height: 800px;
+  margin: 5px 125px;
+
+  .top {
+    width: 979px;
+    height: 200px;
+    margin: 40px 140px;
+    // border: 2px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    h1 {
+      font-size: 4.5rem;
+      font-weight: 700;
+      color: rgb(62, 62, 62);
+    }
+    p {
+      font-size: 28px;
+      text-align: center;
+      // border: 2px solid green;
+      color: rgb(91, 91, 91);
+    }
+  }
+
+  .bottom {
+    width: 1112px;
+    height: 550px;
+    // border: 2px solid blue;
+    margin: 20px 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+
+    .btm_left {
+      width: 530px;
+      height: 550px;
+
+      iframe {
+        width: 530px;
+        height: 550px;
+      }
+    }
+
+    .btm_right {
+      width: 530px;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 542px;
+        height: 434px;
+        font-size: 28px;
+        input {
+          padding-left: 24px;
+          padding-right: 35px;
+          width: 542px;
+          height: 52px;
+          border-radius: 10px;
+          border: 1px solid grey;
+          &:placeholder-shown {
+            font-size: 21px;
+          }
+        }
+        .msg {
+          width: 542px;
+          height: 130px;
+          border: 1px solid grey;
+        }
+      }
+      button {
+        border: none;
+        font-size: 30px;
+        font-weight: 600;
+        outline: none;
+        width: 542px;
+        height: 80px;
+        padding: auto;
+        color: white;
+        border-radius: 25px;
+        background: rgb(255, 71, 71);
+        cursor: pointer;
+      }
+    }
+  }
+}
+.contactpage {
+  background: linear-gradient(to bottom, #fefefe, #ffffff);
+  margin: 0px 0px;
+}
+@media (max-width: 500px) {
+  .contact {
+    display: flex;
+    // padding: 0px 10px;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    height: fit-content;
+    margin-bottom: 20px;
+    .top {
+      width: 100%;
+      height: fit-content;
+      h1 {
+        font-size: 46px;
+      }
+      p {
+        font-size: 19px;
+        width: 80%;
+      }
+    }
+
+    .bottom {
+      flex-direction: column;
+      width: 100%;
+      height: fit-content;
+      margin: 0;
+      .btm_left {
+        width: 90%;
+        margin: 0;
+        height: 50vh;
+        iframe {
+          width: 100%;
+          margin: 0;
+          height: 50vh;
+        }
+      }
+      .btm_right {
+        width: 100%;
+        border: 20x solid black;
+        .inputs {
+          width: 100%;
+          margin: auto;
+
+          input {
+            width: 70%;
+            margin: auto;
+            height: 42px;
+            margin-bottom: 0;
+            &:placeholder-shown {
+              font-size: 16px;
+            }
+          }
+          .msg {
+            width: 70%;
+            margin: auto;
+          }
+        }
+
+        button {
+          width: 40%;
+          margin: auto;
+          height: 50px;
+          border-radius: 15px;
+          font-size: 25px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

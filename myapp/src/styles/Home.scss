@@ -1,0 +1,22 @@
+.work-area {
+  overflow: hidden;
+  width: 98.9vw;
+  margin-top: 0px;
+  .bg {
+    background: linear-gradient(to bottom, #f7e3e3, #ffffff);
+    margin-top: 0;
+
+    hr {
+      display: none;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .work-area .bg hr {
+    display: block;
+    height: 1px;
+    background: rgb(235, 189, 189);
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}

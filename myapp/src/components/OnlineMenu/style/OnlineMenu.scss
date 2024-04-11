@@ -1,0 +1,17 @@
+.online-dish {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  width: fit-content;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .online-dish {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100vw;
+
+    // margin: auto; // border: 2px solid red;
+  }
+}

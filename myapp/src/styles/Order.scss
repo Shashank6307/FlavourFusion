@@ -1,0 +1,241 @@
+.order {
+  margin: 5px 125px;
+  // border: 2px solid blue;
+
+  .order-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    h1 {
+      width: 280px;
+      height: 109px;
+      font-size: 78px;
+      text-align: center;
+    }
+    .cat_btns {
+      width: 1112px;
+      height: 74px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 35px;
+      margin-bottom: 10px;
+
+      button {
+        padding: 35px auto;
+        width: 198px;
+        height: 74px;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 25px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .order_content {
+    // border: 2px solid yellow;
+    margin: 20px 0px;
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    .order_menu {
+      margin: 20px 0px;
+      width: 825px;
+      // height: 984px;
+      height: 100%;
+      // border: 2px solid blue;
+
+      .heading {
+        width: 725px;
+        height: 68px;
+
+        h2 {
+          font-size: 18 px;
+          font-weight: 800;
+          text-transform: uppercase;
+          margin-bottom: 7px;
+        }
+        hr {
+          height: 3px;
+          background-color: red;
+          margin-bottom: 10px;
+          width: 900px;
+        }
+      }
+
+      .pro {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        margin-top: 20px;
+      }
+    }
+  }
+  .order_list {
+    border: none;
+    border-radius: 15px;
+    width: 361px;
+    height: max-content;
+    margin: 100px 120px;
+    padding: 20px;
+    text-align: center;
+    background: rgb(236, 236, 236);
+
+    .checkout {
+      width: 262px;
+      height: 58px;
+      border: none;
+      outline: none;
+      background: #ff5a5a;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .order_list_heading {
+      h1 {
+        margin-bottom: 25px;
+        font-size: 38px;
+        font-weight: 600;
+      }
+      margin-bottom: 10px;
+      border-bottom: 1px dashed grey;
+    }
+  }
+
+  .total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 283px;
+    height: 232px;
+    gap: 30px;
+    margin: 40px auto;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 283px;
+      height: 39px;
+      gap: 90px;
+
+      h1 {
+        margin: 0px 0px;
+        padding: 0px;
+      }
+      p {
+        font-weight: 600;
+        font-size: 28px;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .order {
+    width: 100%;
+    margin: 0;
+    // border: 2px solid green;
+
+    .order-head {
+      margin: auto;
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      gap: 10px;
+      h1 {
+        font-size: 45px;
+        text-align: center;
+        font-weight: 800;
+        margin-bottom: 10px;
+        width: 90%;
+        height: fit-content;
+      }
+    }
+    .order-head .cat_btns {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+      margin: auto;
+      width: 90%;
+      padding: 0px 12px;
+
+      button {
+        width: 100px;
+        height: 35px;
+        border-radius: 5px;
+        font-size: 12px;
+      }
+    }
+
+    .order_content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      // border: 2px solid black;
+
+      .order_menu {
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        .heading {
+          width: 100%;
+          height: fit-content;
+          // display: flex;
+          // align-items: center;
+          // justify-content: center;
+          // flex-direction: column;
+
+          h1 {
+            font-size: 30px;
+            text-align: center;
+          }
+          hr {
+            width: 80%;
+            text-align: center;
+            margin: auto;
+            height: 2px;
+          }
+        }
+
+        .pro {
+          width: 100%;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 10px;
+        }
+      }
+
+      .order_list {
+        width: 80%;
+        height: max-content;
+
+        .checkout {
+          width: 60%;
+          border-radius: 15px;
+          font-size: 14px;
+        }
+
+        .order_list_heading h1 {
+          font-size: 34px;
+        }
+        .total {
+          h1 {
+            font-size: 24px;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

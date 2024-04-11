@@ -1,0 +1,18 @@
+.dish {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 35px;
+  // padding-top: 30px auto;
+  margin: 0 auto;
+  // border: 2px solid black;
+  width: fit-content;
+}
+@media (max-width: 500px) {
+  .dish {
+    width: fit-content;
+    margin: auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 0.5fr 0.5fr;
+  }
+}

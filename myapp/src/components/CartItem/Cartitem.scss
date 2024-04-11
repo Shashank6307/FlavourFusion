@@ -1,0 +1,62 @@
+.caritem {
+  display: flex;
+  flex-direction: column;
+  //   border: 2px solid black;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  width: 283px;
+  height: calc(fit-content);
+  margin: 30px auto;
+  padding: auto 10px;
+
+  hr {
+    width: fit-content;
+    height: 12px;
+  }
+
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 283px;
+    height: 38px;
+  }
+  .prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 283px;
+    height: 38px;
+
+    .less_more_btns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      width: 120px;
+      height: 30px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+
+      background: rgb(200, 200, 200);
+    }
+    p {
+      font-weight: 600;
+      font-size: 21px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .caritem .heading h2 {
+    font-size: 20px;
+  }
+  .caritem .heading button {
+    width: 20%;
+    // height: 10px;
+  }
+  .caritem .prices .less_more_btns {
+    width: 100px;
+  }
+}

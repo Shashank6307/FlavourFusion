@@ -1,0 +1,149 @@
+.populardish {
+  margin: 50px 0px;
+  padding: 10px 91px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  height: 100vh;
+  background: linear-gradient(to bottom, #ddf5ff, #ffffff);
+  .hiddenbtn {
+    display: none;
+    font-size: 21px;
+    font-weight: 600;
+    outline: none;
+    height: 74px;
+    width: 210px;
+    padding: auto;
+    border-radius: 25px;
+    background: rgb(255, 71, 71);
+  }
+  .image-container {
+    height: 90vh;
+    width: 100vw;
+    margin-left: 3cm;
+    margin-top: 2cm;
+
+    img {
+      width: 100%;
+      height: 80vh;
+      object-fit: contain;
+    }
+  }
+  .popular-text-container {
+    height: 80vh;
+    width: 80vw;
+    margin: 0px 50px;
+    // border: 2px solid green;
+    .popular-text {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 14px;
+      width: 11cm;
+
+      h1 {
+        font-size: 4.5rem;
+        font-weight: 700;
+        color: rgb(62, 62, 62);
+      }
+      span {
+        color: rgb(255, 71, 71);
+      }
+      p {
+        font-size: 28px;
+        margin: 20px 0px;
+        // border: 2px solid green;
+        width: 13cm;
+      }
+    }
+    button {
+      border: none;
+      font-size: 21px;
+      font-weight: 600;
+      outline: none;
+      height: 74px;
+      width: 210px;
+      padding: auto;
+      border-radius: 25px;
+      background: rgb(255, 71, 71);
+    }
+  }
+}
+@media (max-width: 500px) {
+  .populardish {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    height: fit-content;
+    margin: auto;
+    // width: 90%;
+    // border: 2px solid red;
+
+    .hiddenbtn {
+      display: block;
+      font-size: 20px;
+      width: 130px;
+      font-size: 18px;
+      height: 40px;
+      border-radius: 5px;
+      background: rgb(255, 71, 71);
+      color: white;
+      margin-top: 0;
+      margin: auto;
+    }
+  }
+  .populardish .popular-text-container {
+    text-align: center;
+    height: fit-content;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    // margin: auto;
+    .popular-text {
+      width: 100%;
+      margin: 0px auto;
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      // border: 2px solid black;
+      height: fit-content;
+    }
+    .popular-text h1 {
+      font-size: 48px;
+      margin-bottom: 2px;
+      font-weight: 800;
+    }
+    .popular-text p {
+      font-size: 18px;
+      text-align: center;
+      width: 80%;
+      margin-top: 0;
+    }
+
+    button {
+      // margin-top: 300px;
+
+      font-size: 20px;
+      display: none;
+      width: 130px;
+      font-size: 18px;
+      height: 40px;
+      border-radius: 5px;
+      color: white;
+    }
+  }
+  .populardish .image-container {
+    width: 100%;
+    // border: 2px solid green;
+    margin: auto;
+    margin-top: 0;
+    height: fit-content;
+  }
+  .populardish .image-container img {
+    width: 105%;
+    height: 280px;
+    margin: auto;
+    margin-top: 0;
+  }
+}
